@@ -1,0 +1,11 @@
+{
+    "name": "api-node",
+    "version": "1.0.0",
+    "description": "Servidor de API en Node",
+    "author": "MarioQuirosLuna",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^7.0.2",
+        "nodemon": "^2.0.22"
+    }
+}
