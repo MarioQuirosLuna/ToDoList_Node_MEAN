@@ -62,9 +62,11 @@ app.delete('/api/list/:id', async (req, res) => {
 
 app.put('/api/list/:id', async (req, res) => {
     const { id } = req.params
+    const { text } = req.body
 
     List.findOneAndUpdate(
         { _id: id },
+        { text: text },
         { done: true }
     ).then(list => {
         res.status(200).send({
